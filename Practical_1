@@ -1,0 +1,5 @@
+anima@Anima:~/LinuxCommands$ touch Test_1
+anima@Anima:~/LinuxCommands$ ls -l
+total 0
+-rw-r--r-- 1 anima anima 0 Nov 17 14:22 Test_1
+
