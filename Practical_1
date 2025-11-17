@@ -2,4 +2,10 @@ anima@Anima:~/LinuxCommands$ touch Test_1
 anima@Anima:~/LinuxCommands$ ls -l
 total 0
 -rw-r--r-- 1 anima anima 0 Nov 17 14:22 Test_1
+###################################################
+anima@Anima:~$ cd LinuxCommands/
+anima@Anima:~/LinuxCommands$ touch File1
+anima@Anima:~/LinuxCommands$ vi File1
+anima@Anima:~/LinuxCommands$ grep -i -n "Ashish" ./File1
+6:Ashish
 
