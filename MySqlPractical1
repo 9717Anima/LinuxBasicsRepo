@@ -1,0 +1,11 @@
+-- With Click AS
+-- (Select app_id, count(event_type) as Num_Click from events 
+-- where event_type = 'click' and EXTRACT( YEAR FROM date(timestamp)) = 2022
+-- group by 1),
+-- Imp AS 
+-- (Select app_id, count(event_type) as Num_Imp from events 
+-- where event_type = 'impression' and EXTRACT( YEAR FROM date(timestamp)) = 2022
+-- group by 1)
+-- Select C.app_id, ROUND((CAST(Num_Click AS FLOAT) / CAST(Num_Imp AS FLOAT))*100, 2) AS ctr from Click C
+-- inner join Imp I on 
+-- C.app_id = I.app_id
