@@ -8,4 +8,12 @@
 -- group by 1)
 -- Select C.app_id, ROUND((CAST(Num_Click AS FLOAT) / CAST(Num_Imp AS FLOAT))*100, 2) AS ctr from Click C
 -- inner join Imp I on 
--- C.app_id = I.app_id
+-- C.app_id = I.app_i
+
+select e.user_id, t.signup_action, DATE(t.action_date), DATE(e.signup_date) from emails e 
+inner join texts t on 
+e.email_id = t.email_id
+WHERE
+t.signup_action = 'Confirmed' AND
+t.action_date=e.signup_date + INTERVAL '1 day' 
+-- datediff(day, DATE(t.action_date), DATE(e.signup_date)) = 1
