@@ -19,3 +19,5 @@ t.action_date=e.signup_date + INTERVAL '1 day'
 -- datediff(day, DATE(t.action_date), DATE(e.signup_date)) = 1
 ---
 ---
+--
+--
